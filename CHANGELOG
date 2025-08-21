@@ -1,6 +1,10 @@
 UNRELEASED
 ----------
 
+v3.1.1
+-----
+Allow empty `from_email` param
+
 v3.1.0
 -----
 Drop Python 3.6, 3.7, and 3.8 support
