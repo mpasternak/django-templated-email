@@ -1,0 +1,31 @@
+{% block subject %}Test email sent by sendtesttemplatedemail management command{% endblock %}
+
+{% block plain %}
+Hello,
+
+{{ message }}
+
+This is a test email sent from the Django Templated Email library.
+If you can read this message, your email configuration is working correctly.
+
+Best regards,
+Django Templated Email
+{% endblock %}
+
+{% block html %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test Email</title>
+</head>
+<body>
+    <h1>Hello!</h1>
+    <p>{{ message }}</p>
+    <p>This is a test email sent from the Django Templated Email library.</p>
+    <p>If you can read this message, your email configuration is working correctly.</p>
+    <p>Best regards,<br>
+    Django Templated Email</p>
+</body>
+</html>
+{% endblock %}
